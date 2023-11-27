@@ -1,0 +1,758 @@
+ name: "010_photograph"
+  suffix: "mp3"
+}
+audio {
+  name: "011_photograph"
+  suffix: "mp3"
+}
+audio {
+  name: "012_photograph"
+  suffix: "mp3"
+}
+audio {
+  name: "013_photograph"
+  suffix: "mp3"
+}
+audio {
+  name: "014_photograph"
+  suffix: "mp3"
+}
+audio {
+  name: "015_photograph"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_Cattle"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_Elephant"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_Giraffe"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_Horse_snout"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_Rhinoceros"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_Sealion"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_Walrus"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_angry"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_anjian2"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_bear"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_biansheng"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_bird"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_chicken"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_complete"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_dianbo"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_dianhuahujiao"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_dog"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_fail"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_get"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_happy"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_haqian"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_horse_screamed"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_hulu"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_jiguang"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_jingche1"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_jingche2"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_jiqiren"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_jiuhuche"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_laidianlingsheng"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_lion"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_maimeng"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_mangyin"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_meimiaoshunjian"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_menlin"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_monkey"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_move"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_qichelaba"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_qichelaba1"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_qicheyinqing"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_shiluo"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_surprise"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_tiger"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_xuangaoshunjian"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_yanhu"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_yinqing"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_yiwen"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_yiyu"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_yujianjiqi"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_yukuai"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_zhiyuan"
+  suffix: "mp3"
+}
+audio {
+  name: "BCM_zunming"
+  suffix: "mp3"
+}
+audio {
+  name: "action_002"
+  suffix: "mp3"
+}
+audio {
+  name: "action_003"
+  suffix: "mp3"
+}
+audio {
+  name: "astern"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_005"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_006"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_007"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_008"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_009"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_010"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_011"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_012"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_013"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_014"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_015"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_016"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_017"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_018"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_019"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_020"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_021"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_022"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_023"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_024"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_025"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_026"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_027"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_028"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_029"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_030"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_031"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_032"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_033"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_034"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_035"
+  suffix: "mp3"
+}
+audio {
+  name: "custom_036"
+  suffix: "mp3"
+}
+audio {
+  name: "dance_0001en"
+  suffix: "mp3"
+}
+audio {
+  name: "dance_0001kp"
+  suffix: "mp3"
+}
+audio {
+  name: "dance_0002en"
+  suffix: "mp3"
+}
+audio {
+  name: "dance_0002kp"
+  suffix: "mp3"
+}
+audio {
+  name: "dance_0003en"
+  suffix: "mp3"
+}
+audio {
+  name: "dance_0004en"
+  suffix: "mp3"
+}
+audio {
+  name: "dance_0005"
+  suffix: "mp3"
+}
+audio {
+  name: "dance_0005en"
+  suffix: "mp3"
+}
+audio {
+  name: "dance_0006en"
+  suffix: "mp3"
+}
+audio {
+  name: "dance_0007en"
+  suffix: "mp3"
+}
+audio {
+  name: "dance_0008en"
+  suffix: "mp3"
+}
+audio {
+  name: "dance_0009en"
+  suffix: "mp3"
+}
+audio {
+  name: "dance_0010en"
+  suffix: "mp3"
+}
+audio {
+  name: "dance_0011en"
+  suffix: "mp3"
+}
+audio {
+  name: "dark_001"
+  suffix: "mp3"
+}
+audio {
+  name: "dark_002"
+  suffix: "mp3"
+}
+audio {
+  name: "drift"
+  suffix: "mp3"
+}
+audio {
+  name: "face_001b"
+  suffix: "mp3"
+}
+audio {
+  name: "face_003b"
+  suffix: "mp3"
+}
+audio {
+  name: "face_005"
+  suffix: "mp3"
+}
+audio {
+  name: "face_007"
+  suffix: "mp3"
+}
+audio {
+  name: "face_008"
+  suffix: "mp3"
+}
+audio {
+  name: "face_009"
+  suffix: "mp3"
+}
+audio {
+  name: "face_010"
+  suffix: "mp3"
+}
+audio {
+  name: "face_011"
+  suffix: "mp3"
+}
+audio {
+  name: "face_012"
+  suffix: "mp3"
+}
+audio {
+  name: "face_013"
+  suffix: "mp3"
+}
+audio {
+  name: "face_014"
+  suffix: "mp3"
+}
+audio {
+  name: "face_015"
+  suffix: "mp3"
+}
+audio {
+  name: "face_016"
+  suffix: "mp3"
+}
+audio {
+  name: "face_017"
+  suffix: "mp3"
+}
+audio {
+  name: "face_018b"
+  suffix: "mp3"
+}
+audio {
+  name: "face_019b"
+  suffix: "mp3"
+}
+audio {
+  name: "face_020"
+  suffix: "mp3"
+}
+audio {
+  name: "face_021"
+  suffix: "mp3"
+}
+audio {
+  name: "face_022a"
+  suffix: "mp3"
+}
+audio {
+  name: "face_022c"
+  suffix: "mp3"
+}
+audio {
+  name: "face_024"
+  suffix: "mp3"
+}
+audio {
+  name: "face_025"
+  suffix: "mp3"
+}
+audio {
+  name: "face_026b"
+  suffix: "mp3"
+}
+audio {
+  name: "face_028b"
+  suffix: "mp3"
+}
+audio {
+  name: "face_029"
+  suffix: "mp3"
+}
+audio {
+  name: "face_030"
+  suffix: "mp3"
+}
+audio {
+  name: "face_034b"
+  suffix: "mp3"
+}
+audio {
+  name: "face_035"
+  suffix: "mp3"
+}
+audio {
+  name: "face_036"
+  suffix: "mp3"
+}
+audio {
+  name: "face_037"
+  suffix: "mp3"
+}
+audio {
+  name: "face_038"
+  suffix: "mp3"
+}
+audio {
+  name: "face_039"
+  suffix: "mp3"
+}
+audio {
+  name: "face_040"
+  suffix: "mp3"
+}
+audio {
+  name: "fallingdown_001"
+  suffix: "mp3"
+}
+audio {
+  name: "guide_bind_002"
+  suffix: "mp3"
+}
+audio {
+  name: "guide_connect_004"
+  suffix: "mp3"
+}
+audio {
+  name: "guide_lte_005"
+  suffix: "mp3"
+}
+audio {
+  name: "guide_photo_007"
+  suffix: "mp3"
+}
+audio {
+  name: "guide_rest_009"
+  suffix: "mp3"
+}
+audio {
+  name: "guide_shutoff_010"
+  suffix: "mp3"
+}
+audio {
+  name: "guide_stop_012"
+  suffix: "mp3"
+}
+audio {
+  name: "guide_switch_019"
+  suffix: "mp3"
+}
+audio {
+  name: "guide_volume_017"
+  suffix: "mp3"
+}
+audio {
+  name: "horn"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_001"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_002"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_003"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_004"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_009"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_010"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_011"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_012"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_013"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_014"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_015"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_016"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_017"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_018"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_019"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_020"
+  suffix: "mp3"
+}
+audio {
+  name: "photograph_022"
+  suffix: "mp3"
+}
+audio {
+  name: "police_car"
+  suffix: "mp3"
+}
+audio {
+  name: "query_upgrade_content"
+  suffix: "mp3"
+}
+audio {
+  name: "reboot_001"
+  suffix: "mp3"
+}
+audio {
+  name: "reboot_003"
+  suffix: "mp3"
+}
+audio {
+  name: "reboot_004"
+  suffix: "mp3"
+}
+audio {
+  name: "shaoziyinxiao"
+  suffix: "mp3"
+}
+audio {
+  name: "start"
+  suffix: "mp3"
+}
+audio {
+  name: "w_head_001"
+  suffix: "mp3"
+}
+audio {
+  name: "w_head_002"
+  suffix: "mp3"
+}
+audio {
+  name: "w_head_003"
+  suffix: "mp3"
+}
+audio {
+  name: "w_head_004"
+  suffix: "mp3"
+}
+audio {
+  name: "w_head_005"
+  suffix: "mp3"
+}
+audio {
+  name: "w_head_006"
+  suffix: "mp3"
+}
+audio {
+  name: "w_head_007"
+  suffix: "mp3"
+}
+audio {
+  name: "w_head_008"
+  suffix: "mp3"
+}
+audio {
+  name: "w_head_009"
+  suffix: "mp3"
+}
+audio {
+  name: "w_head_010"
+  suffix: "mp3"
+}
+audio {
+  name: "w_head_011"
+  suffix: "mp3"
+}
+audio {
+  name: "w_head_012"
+  suffix: "mp3"
+}
+audio {
+  name: "w_head_013"
+  suffix: "mp3"
