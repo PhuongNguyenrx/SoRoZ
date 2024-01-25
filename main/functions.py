@@ -10,8 +10,6 @@ from mini.apis.api_sound import FetchAudioList, GetAudioListResponse, AudioSearc
 from mini.apis.api_sound import PlayAudio, PlayAudioResponse, AudioStorageType
 from mini.apis.base_api import MiniApiResultType
 
-#placeholder for functions
-
 # Setting up
 async def test_get_device_by_name():
     result: WiFiDevice = await MiniSdk.get_device_by_name("2356", 10)

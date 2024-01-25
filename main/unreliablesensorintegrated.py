@@ -6,12 +6,10 @@ import mini.mini_sdk as MiniSdk
 from mini.apis import errors
 from mini.dns.dns_browser import WiFiDevice
 from mini.apis.api_sound import ChangeRobotVolume
+from mini.apis.api_sound import FetchAudioList, GetAudioListResponse, AudioSearchType
 from mini.apis.api_sound import PlayAudio, PlayAudioResponse, AudioStorageType
+from mini.apis.api_action import PlayAction, PlayActionResponse
 from mini.apis.base_api import MiniApiResultType
-
-# <summary>
-# Main prototype being used currently (with sensor)
-# </summary>
 
 # Connect & Disconnect
 async def test_get_device_by_name():
@@ -69,6 +67,7 @@ async def prototype(longTimer: int, shortTimer: int, drinkTimer: int, weight_flu
                     if drink_countdown_task.done() and new_weight == 0:
                         print("Bottle not measuring")
                         await put_bottle_down_audio()
+                        await reminder_action()
     
                 except KeyboardInterrupt:
                     await shutdown()
@@ -76,7 +75,7 @@ async def prototype(longTimer: int, shortTimer: int, drinkTimer: int, weight_flu
             if timer_task.done() and not timer_task.cancelled():
                 print("Need to drink")
                 await play_reminder_audio()
-                
+                await reminder_action()
                 timer_task.cancel()
 
                 timer_task = asyncio.create_task(asyncio.sleep(shortTimer*60))
@@ -98,11 +97,10 @@ async def play_reminder_audio():
     block: PlayAudio = PlayAudio(
         url='https://audio.jukehost.co.uk/ekqu4z3yTIjKYry8AcPKzp6vgoRrUqzS',
         storage_type=AudioStorageType.NET_PUBLIC)
-    #NL
+    # NL
     # block: PlayAudio = PlayAudio(
     #     url='https://audio.jukehost.co.uk/hvc12qSsSK1eEnEWA7Pio9IuSa9iHSzv',
     #     storage_type=AudioStorageType.NET_PUBLIC)
-    
     (resultType, response) = await block.execute()
     print(f'test_play_local_audio result: {response}')
     print('resultCode = {0}, error = {1}'.format(response.resultCode, errors.get_speech_error_str(response.resultCode)))
@@ -112,14 +110,23 @@ async def put_bottle_down_audio():
     block: PlayAudio = PlayAudio(
         url='https://audio.jukehost.co.uk/CnIGEqhQqdcc0TvebF8SKBx7ZAtemQ1y',
         storage_type=AudioStorageType.NET_PUBLIC)
-    #NL
+    # NL
     # block: PlayAudio = PlayAudio(
     #     url='https://audio.jukehost.co.uk/io4M8f37pYS8p6NB2hzulVm7xtECfHKq',
     #     storage_type=AudioStorageType.NET_PUBLIC)
-
     (resultType, response) = await block.execute()
     print(f'test_play_local_audio result: {response}')
     print('resultCode = {0}, error = {1}'.format(response.resultCode, errors.get_speech_error_str(response.resultCode)))
+
+async def reminder_action():
+    block: PlayAction = PlayAction(action_name='random_short3')
+    (resultType, response) = await block.execute()
+
+    print(f'test_play_action result:{response}')
+
+    assert resultType == MiniApiResultType.Success, 'test_play_action timetout'
+    assert response is not None and isinstance(response, PlayActionResponse), 'test_play_action result unavailable'
+    assert response.isSuccess, 'play_action failed'
 
 MiniSdk.set_log_level(logging.INFO)
 MiniSdk.set_robot_type(MiniSdk.RobotType.EDU)
@@ -136,7 +143,7 @@ async def main():
         # await test_change_robot_volume(0.4)
 
         #main program
-        await prototype(0.2, 0.1, 0.1, 50, ser) #longtimer, shorttimer, drinktimer, weight fluc tolerance
+        await prototype(1, 0.2, 0.1, 50, ser) #longtimer(in minutes), shorttimer(in minutes), drinktimer, weight fluc tolerance
         await shutdown()
 
 if __name__ == '__main__':
