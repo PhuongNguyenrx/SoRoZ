@@ -11,6 +11,13 @@ from mini.apis.api_sound import PlayAudio, PlayAudioResponse, AudioStorageType
 from mini.apis.api_action import PlayAction, PlayActionResponse
 from mini.apis.base_api import MiniApiResultType
 
+# <summary>
+# Main prototype being used currently (with sensor)
+# </summary>
+
+# Robot manual: https://docs.ubtrobot.com/alphamini/python-sdk-en/index.html
+# Robot errors in terminal: https://docs.ubtrobot.com/alphamini/python-sdk-en/errorDesc.html
+
 # Connect & Disconnect
 async def test_get_device_by_name():
     result: WiFiDevice = await MiniSdk.get_device_by_name("2356", 10) #replace with robot ID (last numbers)
@@ -86,16 +93,18 @@ async def prototype(longTimer: int, shortTimer: int, drinkTimer: int, weight_flu
         await shutdown()
 
 #Functions
+#Call this to change robot volume via code (parameter is desired volume)
 async def test_change_robot_volume(volume: float):
     block: ChangeRobotVolume = ChangeRobotVolume(volume=volume)
     (resultType, response) = await block.execute()
 
     print(f'test_change_volume_result: {response}')
 
+#Call this to play reminder audio
 async def play_reminder_audio():
     
     block: PlayAudio = PlayAudio(
-        url='https://audio.jukehost.co.uk/ekqu4z3yTIjKYry8AcPKzp6vgoRrUqzS',
+        url='https://audio.jukehost.co.uk/ekqu4z3yTIjKYry8AcPKzp6vgoRrUqzS', #Link is custom generated audio file/Can be changed
         storage_type=AudioStorageType.NET_PUBLIC)
     # NL
     # block: PlayAudio = PlayAudio(
@@ -105,6 +114,7 @@ async def play_reminder_audio():
     print(f'test_play_local_audio result: {response}')
     print('resultCode = {0}, error = {1}'.format(response.resultCode, errors.get_speech_error_str(response.resultCode)))
 
+#Call this to play audio to put bottle down
 async def put_bottle_down_audio():
     
     block: PlayAudio = PlayAudio(
@@ -118,8 +128,9 @@ async def put_bottle_down_audio():
     print(f'test_play_local_audio result: {response}')
     print('resultCode = {0}, error = {1}'.format(response.resultCode, errors.get_speech_error_str(response.resultCode)))
 
+#Call this to make the robot perform an action
 async def reminder_action():
-    block: PlayAction = PlayAction(action_name='random_short3')
+    block: PlayAction = PlayAction(action_name='random_short3') #Replace with desired action https://docs.ubtrobot.com/alphamini/python-sdk-en/additional.html#built-in-actions
     (resultType, response) = await block.execute()
 
     print(f'test_play_action result:{response}')
@@ -138,12 +149,14 @@ async def main():
 
     device: WiFiDevice = await test_get_device_by_name()
     if device:
+        #Connect + Start_run are must haves to connect with the robot and enter programming mode
         await test_connect(device)
         await test_start_run_program()
         # await test_change_robot_volume(0.4)
 
         #main program
         await prototype(1, 0.2, 0.1, 50, ser) #longtimer(in minutes), shorttimer(in minutes), drinktimer, weight fluc tolerance
+        #Doesnt actually get called
         await shutdown()
 
 if __name__ == '__main__':
